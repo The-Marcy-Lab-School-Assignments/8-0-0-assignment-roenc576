@@ -77,9 +77,9 @@ As you build your server, visit http://localhost:8080 (or whatever port number y
 
 **Server Application Technical Requirements**
 
-- [ ] In `index.js`, the `express()` function is used to create an `app`
+- [ x ] In `index.js`, the `express()` function is used to create an `app`
 - [ ] There are 4 controller functions
-  - [ ] Two controllers send an HTML response (either raw HTML or an HTML file)
+  - [ x ] Two controllers send an HTML response (either raw HTML or an HTML file)
   - [ ] Two controllers send a data response
   - [ ] One of the controllers uses query parameters in some way (`req.query.parameterName`)
 - [ ] There are 4 GET endpoints
