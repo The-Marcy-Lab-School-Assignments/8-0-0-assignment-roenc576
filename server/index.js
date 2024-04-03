@@ -7,12 +7,24 @@ const serveIndex = (req, res, next) => {
 }
 
 const serveRoe = (req, res, next) => {
-    res.send('<p>roe at your SERVice ;>');
+    res.send('<p>roe is the SERV ;>');
+}
+
+const serveFriends = (req, res, next) => {
+    const friends = [{name: 'nicole'}, {name: 'madhur'}, {name: 'alexa'}, {name: 'eli'}, {name: 'mo'}];
+    res.send(friends);
+}
+
+const serveCities = (req, res, next) => {
+    const cities = [{name: 'new york'}, {name: 'seattle'}, {name: 'nashville'}, {name: 'cape cod'}];
+    res.send(cities);
 }
 
 // endpoints
 app.get('/roe', serveRoe);
 app.get('/', serveIndex);
+app.get('/api/friends', serveFriends);
+app.get('/api/cities', serveCities);
 
 // listen
 const port = 8080;
