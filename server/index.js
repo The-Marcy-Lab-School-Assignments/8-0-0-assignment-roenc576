@@ -20,11 +20,17 @@ const serveCities = (req, res, next) => {
     res.send(cities);
 }
 
+const serveGreet = (req, res, next) => {
+    const name = req.query.name || "friend";
+    res.send(`Hello, ${name} :33333333333`);
+}
+
 // endpoints
 app.get('/roe', serveRoe);
 app.get('/', serveIndex);
 app.get('/api/friends', serveFriends);
 app.get('/api/cities', serveCities);
+app.get('/greet', serveGreet);
 
 // listen
 const port = 8080;
