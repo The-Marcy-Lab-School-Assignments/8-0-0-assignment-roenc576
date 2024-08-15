@@ -35,7 +35,7 @@ app.get('/api/friends', serveFriends);
 app.get('/api/cities', serveCities);
 
 /* FEEDBACK: this should also start with /api since it serves data */
-app.get('/greet', serveGreet);
+app.get('/api/greet', serveGreet);
 
 // listen
 const port = 8080;
